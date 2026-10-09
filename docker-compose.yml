@@ -1,0 +1,10 @@
+services:
+  sitechat:
+    build: .
+    container_name: sitechat-ai
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "3009:3009"
+    volumes:
+      - ./data:/app/data
