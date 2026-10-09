@@ -1,0 +1,21 @@
+{
+  "name": "website-chatbot",
+  "version": "1.0.0",
+  "description": "Done-for-you AI support chatbot for restaurants and clinics - one script tag, grounded in the client's own website, lead capture to the owner's inbox.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node test/e2e.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "openai": "^4.67.0"
+  }
+}
